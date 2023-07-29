@@ -6,5 +6,4 @@ void main(List<String> args) {
   print(3+5);
   print('Şeyda\'nın dersi');
   
-
 }
