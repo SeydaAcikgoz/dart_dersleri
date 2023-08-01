@@ -24,4 +24,11 @@ main(List<String> args) {
   //sayi1 < sayi2 ? kucukSayi = sayi1 : kucukSayi = sayi2;
   kucukSayi = sayi1 < sayi2 ? sayi1 : sayi2;
   print("küçük sayı : $kucukSayi");
+
+  String? ad = null;
+  String? soyad = 'altunbilek';
+  String? mesaj;
+
+  mesaj = ad ?? soyad;    //ad değişkeni null'sa soyadı,soyad null'sa ad değişkenini yaz
+  print("Merhaba $mesaj");
 }
