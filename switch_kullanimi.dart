@@ -38,4 +38,24 @@ main(List<String> args) {
       }
   }
 
+ /* 
+  double değer kullanılmıyor
+  var yas=22.6;
+  
+  switch(yas){
+
+    case 18.8:
+    print("yasınız 18");
+    break;
+
+    case 22.5:
+    print("yasınız 22");
+    break;
+
+    default : {
+      print("Bilinmeyen değer");
+    }
+
+  }
+*/
 }
