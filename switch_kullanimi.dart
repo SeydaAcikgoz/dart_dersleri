@@ -58,4 +58,26 @@ main(List<String> args) {
 
   }
 */
+
+   int sayi = 6;
+  int bolum = (sayi / 10).toInt() ;
+
+  switch(bolum){
+
+    case 3:
+    print("Sayı 30dan büyüktür");
+    break;
+
+    case 2:
+    print("Sayi 20den büyüktür");
+    break;
+
+    case 1:
+    print("Sayı 10dan büyüktür");
+    break;
+
+    case 0:
+    print("Sayi 10den küçüktür");
+    break;
+  }
 }
