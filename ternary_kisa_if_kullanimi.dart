@@ -26,7 +26,7 @@ main(List<String> args) {
   print("küçük sayı : $kucukSayi");
 
   String? ad = null;
-  String? soyad = 'altunbilek';
+  String? soyad = 'açıkgoz';
   String? mesaj;
 
   mesaj = ad ?? soyad;    //ad değişkeni null'sa soyadı,soyad null'sa ad değişkenini yaz
