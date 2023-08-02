@@ -40,5 +40,15 @@ if(isim != soyIsim){
 }else{
   print("isim ile soyisim aynı değere sahip");
 }
+   
+//Mantıksal operatörler
+//&& , ||,  !
+
+bool kosul1 = false;
+bool kosul2 = false;
+
+print(kosul1 && kosul2);
+print(kosul1 || kosul2);
+print(!kosul1);
 
 }
