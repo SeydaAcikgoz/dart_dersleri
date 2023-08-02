@@ -21,4 +21,24 @@ print(sayi3);
 sayi3 %= 4;
 print(sayi3);
 
+   //< , > , <= , >= , ==, !=
+
+double sayi4 = 9;
+double sayi5 = 5;
+
+if(sayi4 <= sayi5){
+
+}else{
+  print("Sayi $sayi4 küçük ve eşit değildir $sayi5");
+}
+
+String isim = "seyda";
+String soyIsim = "seyda";
+
+if(isim != soyIsim){
+  print("İsim soyisimle aynı değil");
+}else{
+  print("isim ile soyisim aynı değere sahip");
+}
+
 }
