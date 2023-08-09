@@ -59,5 +59,12 @@ main(List<String> args) {
     print("Okunan sayaç değeri $sayac");
     sayac ++ ; 
   }
+//DO-WHILE LOOP
+  int sayac2 = 1;
+  do{
+  print("Okunan sayac degeri: $sayac2");
+  sayac2++;
+  }while(sayac2<=5);
 
+ 
 }
