@@ -52,4 +52,12 @@ main(List<String> args) {
   for(int i=0; i<isimListesi.length; i++){
     print("Okunan eleman "+ isimListesi[i]);
   }
+
+  //WHILE LOOP
+  int sayac=0;
+  while(sayac < 3){
+    print("Okunan sayaç değeri $sayac");
+    sayac ++ ; 
+  }
+
 }
