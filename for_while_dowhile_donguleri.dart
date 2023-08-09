@@ -66,5 +66,36 @@ main(List<String> args) {
   sayac2++;
   }while(sayac2<=5);
 
- 
+  for(int i=0; i<10; i++){
+
+    if(i>5){
+      break;
+    }
+    print("i değeri: $i");
+  }
+
+  for(int i=0; i<10; i++){
+
+    if(i>5){
+      print("continue i değeri: $i");
+
+    }
+    else{
+      print("i değeri 5den küçük oldugu için herhangi bir işlem yapılmayacak");
+      continue;
+    }
+   
+  }
+
+  distakiDongu:for(int i=1; i<=3; i++){
+
+    for(int j=1; j<=3; j++){
+     
+
+      if(i==2){
+        break distakiDongu;
+      }
+       print("$i * $j = ${i*j}");
+    }
+  }
 }
