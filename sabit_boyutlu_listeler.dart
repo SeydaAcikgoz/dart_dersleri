@@ -29,4 +29,15 @@ main(List<String> args) {
   karisik[2] = false;
   print(karisik);
 
+   //liste elemanlarını gezmek
+  for (int i = 0; i < sayilar.length; i++) {
+    sayilar[i] += 5;
+    print(sayilar[i]);
+  }
+
+  print("****************");
+  for (int oankiEleman in sayilar) {
+    print(oankiEleman);
+  }
+
 }
