@@ -17,4 +17,17 @@ main(List<String> args) {
   sayilar.removeAt(1);
   print(sayilar); // verilen indeksteki elemanı siler.
 
+  //sayilar.clear();
+  if (sayilar.contains(9)) {
+    print("Listede 9 var");
+  } else {
+    print("Listede 9 yok");
+  }
+  print(sayilar);
+
+  print(sayilar.elementAt(2));
+  print(sayilar.indexOf(11));
+  sayilar.shuffle();  //listeyi rastgele sıralar
+  print(sayilar);
+
 }
