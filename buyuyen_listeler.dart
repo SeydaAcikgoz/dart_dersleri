@@ -26,5 +26,10 @@ main(List<String> args) {
   sayilar3.add(55);
   print(sayilar3);
   print(sayilar3.length);
+  
+  List<int> sayilar4 = List.empty(growable: true);  //boş liste oluşturuldu 
+  List<int> sayilar5 = [];  //sayılar4=sayılar5
+  sayilar5.add(5);
+  sayilar4.add(10);
 
 }
