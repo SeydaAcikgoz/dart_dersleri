@@ -20,6 +20,30 @@ main(List<String> args) {
     "yas": 34,
     "bekarMi": true
   };
+  List sayilar = [0, 1, 2];
 
+  Map<String, dynamic> deneme = Map();
+  Map<String, dynamic> deneme2 = {};
+
+  deneme2['yas'] = 55;
+  print(emre['yas']);
+
+  for (String oankiAnahtar in emre.keys) {
+    print(oankiAnahtar);
+    print(emre[oankiAnahtar]);
+  }
+
+  for (dynamic deger in emre.values) {
+    print(deger);
+  }
+
+  for (var element in emre.entries) {
+    print("Key : ${element.key} değeri : ${element.value}");
+  }
+
+  if (emre.containsKey('yas')) {
+    print("Bulunan yaş değeri ${emre['yas']}");
+  }
+  print(emre);
 
 }
