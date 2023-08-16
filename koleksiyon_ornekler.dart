@@ -79,7 +79,32 @@ Olusan son listenin elemanlarının karelerini tutan set yapısı olusturup ekra
 
   print(sonListe);
   print(sonSetyapisi);
+/*5- Kullanıcıdan aldıgınız integer pozitif sayıları bir listede tutun, kullanıcı -1 değerini
+girdiğinde girilen sayıların ortalamasını ekrana yazdırın.
+*/
+  int girilenNot = 0;
+  List<int> girilenNotlar = <int>[];
+  //List<int> girilenNotlar2 = List.empty(growable: true);
+  do {
+    print("Lütfen notunuzu giriniz , çıkış için -1");
+    girilenNot = int.parse(stdin.readLineSync()!);
+    if (girilenNot != -1) {
+      girilenNotlar.add(girilenNot);
+    }
+  } while (girilenNot != -1);
 
+  print("Kaç tane not girildi ${girilenNotlar.length}");
+  double ortalama = listeninOrtalamasiniBul(girilenNotlar);
+  print("Notların ortalaması $ortalama");
 
+}
+
+double listeninOrtalamasiniBul(List<int> liste) {
+  int toplam = 0;
+  for (int i = 0; i < liste.length; i++) {
+    toplam = toplam + liste[i];
+  }
+
+  return toplam / liste.length;
 }
 
