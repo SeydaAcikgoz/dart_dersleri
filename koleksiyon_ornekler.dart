@@ -12,5 +12,16 @@ main(List<String> args) {
   for (int i = 0; i < sehirler.length; i++) {
     print(sehirler[i]);
   }
+
+  //2- Keyleri string, değerleri dynamic olan bir map olusturun. Bu map yapısında bilgisayarınızın işlemci çekirdek sayısını, ram miktarını ve ssd olup olmadıgı bilgisini tutun ve ekrana yazdırın.
+  Map<String, dynamic> bilgi = {};
+  bilgi['cekirdek_sayisi'] = 16;
+  bilgi['ram_miktari'] = 8;
+  bilgi['ssd_var_mi'] = true;
+
+  print("Bilgiyar bilgileri");
+  for (var oankiEntry in bilgi.entries) {
+    print(" ${oankiEntry.key} : ${oankiEntry.value}");
+  }
 }
 
