@@ -29,6 +29,18 @@ main(List<String> args) {
   honda.bilgileriSoyle();
   honda.modelYili = 2021;
   honda.bilgileriSoyle();
+  var reno = Araba(2019, "Reno", false);
+  reno.bilgileriSoyle();
+
+  var bmw = Araba(2021, "BMW", true);
+  bmw.bilgileriSoyle();
+  bmw.yasHesapla();
+
+  var citroen = Araba.markasizKurucuMetot(false, 2015);
+  Araba suzuki = Araba.modelYiliOlmayanKurucuMetot(true, "Suzuki");
+
+  suzuki.bilgileriSoyle();
+  suzuki.yasHesapla();
 
 }
 
@@ -45,6 +57,26 @@ class Araba {
     //ya da bu constructor olacak
     print("Kurucu metot tetiklendi");
   }
+
+ //isimlendirilmiş kurucu metot
+  Araba.markasizKurucuMetot(this.otomatikMi, this.modelYili);
+//isimlendirilmiş kurucu metot
+  Araba.modelYiliOlmayanKurucuMetot(bool otomatikMi, String marka) {
+    this.otomatikMi = otomatikMi;
+    this.marka = marka;
+  }
+
+  /* Araba(int yil, String m, bool o) {
+    print("Kurucu metot tetiklendi");
+    
+    /* this.modelYili = modelYili;
+    this.marka = marka;
+    this.otomatikMi = otomatikMi; */
+
+   /*  modelYili = yil;
+    marka = m;
+    otomatikMi = o; */
+  } */
 
   void bilgileriSoyle() {
     print(
