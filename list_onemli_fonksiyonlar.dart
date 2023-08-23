@@ -14,11 +14,11 @@ main(List<String> args) {
       return -1;
     } else
       return 0;
-  });
+  });//büyükten küçüğe sıraladı(tersinde küçükten büyüğe sıralar)
 
   print(tumOgrenciler);
 
-  var mapList = tumOgrenciler.map((Person e) => "${e.id}").toSet();
+  var mapList = tumOgrenciler.map((Person e) => "${e.id}").toSet();//elemanların id sini alıp map oluştur onu da set yap
   print(mapList);
 
   tumOgrenciler.add(yunus);
@@ -26,19 +26,19 @@ main(List<String> args) {
 
   print(tumOgrenciler);
 
-  bool sonuc = tumOgrenciler.any((Person element) => element.id > 3);
+  bool sonuc = tumOgrenciler.any((Person element) => element.id > 3); //id si 3 ten büyük herhangi bir eleman var mı?
   print(sonuc);
 
-  Map<int, Person> yeniMap = tumOgrenciler.asMap();
-  print(yeniMap[0]!.id);
+  Map<int, Person> yeniMap = tumOgrenciler.asMap(); //liste map yapısına dönüşür
+  print(yeniMap[0]!.id);  //null olabilir diye ! koyduk
 
   print(tumOgrenciler.contains(Person(3, "emre")));
 
-  bool sonucEvery = tumOgrenciler.every((element) => element.isim.length > 0);
+  bool sonucEvery = tumOgrenciler.every((element) => element.isim.length > 0);  //bütün elemanların isim uzunluğu 0 dan büyük mü?
 
   print(sonucEvery);
 
-  var bulunan = tumOgrenciler.firstWhere((element) => element.id == 1);
+  var bulunan = tumOgrenciler.firstWhere((element) => element.id == 1);//şartı sağlayan ilk elemanı gönderir
   print(bulunan);
 
 /*
@@ -78,3 +78,4 @@ class Ogrenci extends Person {
     return "id:$id ve isim:$isim ve alinan ders sayısı:$alinanDersSayisi\n";
   }
 }
+
